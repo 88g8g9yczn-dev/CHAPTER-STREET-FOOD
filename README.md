@@ -445,9 +445,42 @@ footer {
     padding: 30px 0;
     border-top: 1px solid rgba(255,255,255,0.08);
     color: #6b7280;
-    font-size: 12px;
+    font-size: 13px;
     text-align: center;
     background: rgba(15, 16, 21, 0.9);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.insta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    padding: 8px 16px;
+    border-radius: 50px;
+    font-size: 13px;
+    transition: transform 0.2s, opacity 0.2s;
+    box-shadow: 0 4px 15px rgba(220, 39, 67, 0.3);
+}
+
+.insta-link:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.insta-link svg {
+    width: 18px;
+    height: 18px;
+    fill: #fff;
 }
 
 @media(max-width: 900px) {
@@ -484,18 +517,18 @@ footer {
                 <p>Лучшие бургеры, хот-доги, хрустящие закуски и густые милкшейки в Караганде. Свежие ингредиенты и авторские соусы.</p>
             </div>
             <div>
-                <!-- Главная фирменная фотография бургера -->
+                <!-- Общее фото для всех бургеров -->
                 <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Бургер Chapter" class="hero-banner-img">
             </div>
         </div>
     </section>
 
-    <!-- БУРГЕРЫ -->
+    <!-- БУРГЕРЫ (одна фото на все позиции) -->
     <div class="container" id="burgers">
         <h2 class="section-title">Фирменные <span>Бургеры</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Вилладжио"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Бургеры"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Бургер "Вилладжио" 🧀</h3>
@@ -505,7 +538,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Франческо"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Бургеры"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Бургер "Франческо" 🧀</h3>
@@ -515,7 +548,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Машрум"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Бургеры"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Бургер "Машрум" 🍄</h3>
@@ -525,7 +558,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Тарантино"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Бургеры"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Бургер "Тарантино" 🌶️</h3>
@@ -535,7 +568,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Итальяно"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Бургеры"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Бургер "Итальяно" 🧀</h3>
@@ -545,7 +578,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Чизи-Чиз"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Бургеры"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Бургер "Чизи-Чиз" 🧀</h3>
@@ -557,12 +590,12 @@ footer {
         </div>
     </div>
 
-    <!-- ХОТ-ДОГИ -->
+    <!-- ХОТ-ДОГИ (единая фото хот-дога на все хот-доги) -->
     <div class="container" id="hotdogs" style="margin-top: 40px;">
         <h2 class="section-title">Сочные <span>Хот-доги</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="New York"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1619740455993-9e412b1af1c1?auto=format&fit=crop&w=600&q=80" alt="Хот-доги"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Хот-дог "New York"</h3>
@@ -572,7 +605,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Лучано"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1619740455993-9e412b1af1c1?auto=format&fit=crop&w=600&q=80" alt="Хот-доги"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Хот-дог "Лучано"</h3>
@@ -582,7 +615,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Чизус"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1619740455993-9e412b1af1c1?auto=format&fit=crop&w=600&q=80" alt="Хот-доги"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Хот-дог "Чизус" 🧀</h3>
@@ -592,7 +625,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Грибной"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1619740455993-9e412b1af1c1?auto=format&fit=crop&w=600&q=80" alt="Хот-доги"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Хот-дог "Грибной" 🍄</h3>
@@ -602,7 +635,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Тито"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1619740455993-9e412b1af1c1?auto=format&fit=crop&w=600&q=80" alt="Хот-доги"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Хот-дог "Тито" 🔥</h3>
@@ -619,17 +652,17 @@ footer {
         <h2 class="section-title">Хрустящие <span>Закуски</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Картофель Фри"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="Картофель Фри"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Картофель Фри 🍟</h3>
-                        <p>Золотистые картофельные ломтики с хрустящей корочкой и солидным вкусом.</p>
+                        <p>Золотистые картофельные ломтики с хрустящей корочкой и солью.</p>
                     </div>
                     <div class="menu-bottom"><span class="price">700 ₸</span><button class="add-btn" onclick="addToCart('Картофель Фри', 700)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Наггетсы"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80" alt="Наггетсы"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Куриные Наггетсы 🍗</h3>
@@ -641,12 +674,12 @@ footer {
         </div>
     </div>
 
-    <!-- МИЛКШЕЙКИ -->
+    <!-- МИЛКШЕЙКИ (единая фото милкшейка на все шейки) -->
     <div class="container" id="shakes" style="margin-top: 40px;">
         <h2 class="section-title">Густые <span>Милкшейки</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Ваниль"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Милкшейк"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Милкшейк "Ваниль" 🍦</h3>
@@ -656,7 +689,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Клубничный"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Милкшейк"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Милкшейк "Клубничный" 🍓</h3>
@@ -666,7 +699,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Сникерс"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Милкшейк"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Милкшейк "Сникерс" 🍫</h3>
@@ -676,7 +709,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Шоколад"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Милкшейк"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Милкшейк "Шоколад" 🍫</h3>
@@ -686,7 +719,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Oreo"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Милкшейк"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Милкшейк "Oreo" 🍪</h3>
@@ -696,7 +729,7 @@ footer {
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Банановый"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=600&q=80" alt="Милкшейк"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Милкшейк "Банановый" 🍌</h3>
@@ -713,7 +746,7 @@ footer {
         <h2 class="section-title">Освежающие <span>Напитки</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
-                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Морс"></div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Морс"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
                         <h3>Фирменный Морс 🥤</h3>
@@ -744,8 +777,12 @@ footer {
 </main>
 
 <footer>
-    <div class="container">
-        CHAPTER STREET FOOD • Караганда, ул. Мустафина 24/1 • Все права защищены © 2026
+    <div class="container footer-content">
+        <a href="https://www.instagram.com/chapter_streetfood?stkn=ZThrMGs1OWZtYXdy" target="_blank" class="insta-link">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            Мы в Instagram
+        </a>
+        <span>CHAPTER STREET FOOD • Караганда, ул. Мустафина 24/1 • Все права защищены © 2026</span>
     </div>
 </footer>
 
