@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CHAPTER STREET FOOD — Бургеры и хот-доги в Караганде</title>
+<title>CHAPTER STREET FOOD — Сочные бургеры и хот-доги в Караганде</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
 <style>
 * {
     margin: 0;
@@ -16,20 +17,21 @@ html {
 }
 
 body {
-    background: #0f1012 url('bg.jpg') no-repeat center center fixed;
+    background: #0b0c0f url('bg.jpg') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     position: relative;
+    overflow-x: hidden;
 }
 
-/* Затемняющий оверлей для readability */
+/* Яркий неоново-теплый оверлей для сочности */
 body::before {
     content: "";
     position: fixed;
     inset: 0;
-    background: rgba(15, 16, 18, 0.88);
-    backdrop-filter: blur(4px);
+    background: radial-gradient(circle at 50% 20%, rgba(255, 92, 0, 0.22), rgba(11, 12, 15, 0.93) 70%);
+    backdrop-filter: blur(5px);
     z-index: -1;
 }
 
@@ -45,183 +47,277 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(15,16,18,.9);
-    backdrop-filter: blur(15px);
-    border-bottom: 1px solid rgba(255,255,255,.08);
+    background: rgba(11, 12, 15, 0.85);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 92, 0, 0.2);
 }
 
 .nav {
-    height: 70px;
+    height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .logo {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 900;
     letter-spacing: -0.5px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, #fff, #ff9f43);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .logo span {
     color: #ff5c00;
+    -webkit-text-fill-color: #ff5c00;
 }
 
 .nav-links {
     display: flex;
-    gap: 20px;
-    color: #888;
+    gap: 25px;
+    color: #ccc;
     font-size: 14px;
+    font-weight: 600;
 }
 
 .nav-links a:hover {
-    color: white;
+    color: #ff5c00;
+    text-shadow: 0 0 10px rgba(255, 92, 0, 0.5);
 }
 
 .cart-btn {
-    background: #ff5c00;
+    background: linear-gradient(135deg, #ff5c00, #ff8400);
     color: white;
-    padding: 10px 18px;
-    border-radius: 12px;
-    font-weight: bold;
+    padding: 12px 22px;
+    border-radius: 16px;
+    font-weight: 800;
     border: none;
     cursor: pointer;
-    transition: .2s;
+    box-shadow: 0 4px 20px rgba(255, 92, 0, 0.4);
+    transition: all 0.3s ease;
 }
 
 .cart-btn:hover {
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(255, 92, 0, 0.6);
 }
 
-/* HERO */
+/* HERO SECTION */
 .hero {
-    min-height: 75vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     padding-top: 100px;
 }
 
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 40px;
+    align-items: center;
+}
+
 .hero-content {
-    background: rgba(21, 23, 28, 0.6);
-    padding: 40px;
-    border-radius: 24px;
-    border: 1px solid rgba(255,255,255,.08);
-    backdrop-filter: blur(10px);
-    max-width: 650px;
+    background: rgba(21, 23, 28, 0.75);
+    padding: 45px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 92, 0, 0.3);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
 .badge {
     display: inline-block;
-    padding: 6px 12px;
-    border: 1px solid rgba(255,255,255,.15);
-    border-radius: 20px;
-    color: #ccc;
+    padding: 8px 16px;
+    border: 1px solid rgba(255, 92, 0, 0.4);
+    border-radius: 30px;
+    color: #ff9f43;
     font-size: 13px;
+    font-weight: 600;
     margin-bottom: 20px;
-    background: rgba(0,0,0,.4);
+    background: rgba(255, 92, 0, 0.1);
 }
 
 .hero h1 {
-    font-size: clamp(35px, 5vw, 60px);
+    font-size: clamp(35px, 4.5vw, 55px);
     line-height: 1.1;
+    font-weight: 900;
     letter-spacing: -1px;
 }
 
 .hero h1 span {
-    color: #ff5c00;
+    background: linear-gradient(45deg, #ff5c00, #ffb143);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero p {
-    margin-top: 15px;
-    color: #aaa;
+    margin-top: 20px;
+    color: #ddd;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
+}
+
+/* ПРЕИМУЩЕСТВА (НОВОЕ) */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.feature-card {
+    background: rgba(21, 23, 28, 0.75);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.feature-card h4 {
+    color: #ff5c00;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.feature-card p {
+    color: #aaa;
+    font-size: 13px;
 }
 
 /* MENU SECTION */
 section {
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .section-title {
-    font-size: 30px;
+    font-size: 34px;
+    font-weight: 900;
     letter-spacing: -1px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.section-title span {
     color: #ff5c00;
-    border-bottom: 2px solid rgba(255,92,0,.3);
-    padding-bottom: 8px;
+}
+
+.section-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,92,0,0.5), transparent);
 }
 
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 25px;
 }
 
 .menu-card {
-    background: rgba(21, 23, 28, 0.85);
-    border: 1px solid rgba(255,255,255,.08);
-    border-radius: 20px;
-    padding: 22px;
+    background: rgba(21, 23, 28, 0.88);
+    border: 1px solid rgba(255, 92, 0, 0.15);
+    border-radius: 24px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    backdrop-filter: blur(10px);
-    transition: .2s;
+    backdrop-filter: blur(12px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .menu-card:hover {
-    transform: translateY(-4px);
-    border-color: rgba(255,92,0,.4);
-    background: rgba(21, 23, 28, 0.95);
+    transform: translateY(-6px);
+    border-color: rgba(255, 92, 0, 0.6);
+    box-shadow: 0 15px 35px rgba(255, 92, 0, 0.2);
+    background: rgba(25, 28, 35, 0.95);
 }
 
 .menu-info h3 {
-    font-size: 19px;
-    margin-bottom: 6px;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #fff;
 }
 
 .menu-info p {
-    color: #888;
+    color: #b0b0b0;
     font-size: 13px;
-    line-height: 1.4;
-    margin-bottom: 15px;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 .menu-bottom {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    padding-top: 15px;
 }
 
 .price {
-    font-size: 18px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 900;
+    color: #ffb143;
 }
 
 .add-btn {
-    background: rgba(255,92,0,.2);
+    background: rgba(255, 92, 0, 0.15);
     color: #ff5c00;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 10px;
-    font-weight: bold;
+    border: 1px solid rgba(255, 92, 0, 0.3);
+    padding: 9px 16px;
+    border-radius: 12px;
+    font-weight: 800;
+    font-size: 13px;
     cursor: pointer;
-    transition: .2s;
+    transition: all 0.2s;
 }
 
 .add-btn:hover {
     background: #ff5c00;
     color: white;
+    box-shadow: 0 4px 15px rgba(255, 92, 0, 0.4);
+}
+
+/* О НАС / ИНФО БЛОК */
+.about-section {
+    background: rgba(21, 23, 28, 0.8);
+    border: 1px solid rgba(255, 92, 0, 0.2);
+    border-radius: 30px;
+    padding: 45px;
+    margin-top: 50px;
+    backdrop-filter: blur(15px);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.about-item h3 {
+    color: #ff5c00;
+    font-size: 28px;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.about-item p {
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
 /* MODAL */
 .modal {
     position: fixed;
     inset: 0;
-    background: rgba(0,0,0,.85);
-    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(12px);
     display: none;
     align-items: center;
     justify-content: center;
@@ -235,92 +331,113 @@ section {
 
 .modal-box {
     width: 100%;
-    max-width: 480px;
+    max-width: 500px;
     background: #15171c;
-    border: 1px solid rgba(255,255,255,.1);
-    border-radius: 24px;
-    padding: 25px;
+    border: 1px solid rgba(255, 92, 0, 0.4);
+    border-radius: 28px;
+    padding: 30px;
     max-height: 90vh;
     overflow-y: auto;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.7);
 }
 
 .close {
     float: right;
     background: none;
     border: none;
-    color: #777;
-    font-size: 24px;
+    color: #888;
+    font-size: 28px;
     cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close:hover {
+    color: #ff5c00;
 }
 
 .modal-box h3 {
-    font-size: 22px;
-    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #fff;
 }
 
 .cart-items {
-    max-height: 150px;
+    max-height: 180px;
     overflow-y: auto;
     margin-bottom: 15px;
-    border-bottom: 1px solid rgba(255,255,255,.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
     padding-bottom: 10px;
 }
 
 .cart-item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     font-size: 14px;
-    color: #aaa;
+    color: #ccc;
+    font-weight: 600;
 }
 
 .kaspi-box {
     background: rgba(0, 133, 255, 0.12);
-    border: 1px solid rgba(0, 133, 255, 0.3);
-    border-radius: 12px;
-    padding: 12px;
-    margin: 12px 0;
+    border: 1px solid rgba(0, 133, 255, 0.35);
+    border-radius: 16px;
+    padding: 15px;
+    margin: 15px 0;
     font-size: 13px;
-    color: #ccc;
-    line-height: 1.4;
+    color: #ddd;
+    line-height: 1.5;
 }
 
 .kaspi-box strong {
-    color: #0085ff;
+    color: #38bdf8;
 }
 
 label {
     display: block;
-    color: #888;
+    color: #aaa;
     font-size: 12px;
-    margin-top: 8px;
-    margin-bottom: 4px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 input {
     width: 100%;
-    padding: 10px;
-    background: #0b0c0e;
-    border: 1px solid rgba(255,255,255,.1);
+    padding: 12px 16px;
+    background: #0b0c0f;
+    border: 1px solid rgba(255,255,255,0.12);
     color: white;
-    border-radius: 10px;
+    border-radius: 14px;
     outline: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    transition: border-color 0.2s;
 }
 
 input:focus {
     border-color: #ff5c00;
+    box-shadow: 0 0 10px rgba(255, 92, 0, 0.3);
 }
 
+/* FOOTER */
 footer {
-    padding: 30px 0;
-    border-top: 1px solid rgba(255,255,255,.08);
-    color: #666;
+    padding: 40px 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    color: #777;
     font-size: 13px;
     text-align: center;
+    background: rgba(11, 12, 15, 0.9);
 }
 
-@media(max-width: 800px) {
+@media(max-width: 900px) {
+    .hero-grid { grid-template-columns: 1fr; }
     .menu-grid { grid-template-columns: 1fr; }
+    .about-section { grid-template-columns: 1fr; }
+    .features-grid { grid-template-columns: 1fr; }
     .nav-links { display: none; }
 }
 </style>
@@ -335,25 +452,45 @@ footer {
             <a href="#hotdogs">Хот-доги</a>
             <a href="#combo">Комбо</a>
             <a href="#snackset">Снэки и напитки</a>
+            <a href="#about">О нас</a>
         </nav>
-        <button class="cart-btn" id="openCart">Корзина (<span id="cartCount">0</span>)</button>
+        <button class="cart-btn" id="openCart">🛒 Корзина (<span id="cartCount">0</span>)</button>
     </div>
 </header>
 
 <main>
+    <!-- HERO С ИНФОРМАЦИЕЙ И ПРЕИМУЩЕСТВАМИ -->
     <section class="hero">
-        <div class="container">
+        <div class="container hero-grid">
             <div class="hero-content">
                 <div class="badge">📍 ул. Мустафина 24/1 • 11:00 - 23:00</div>
-                <h1>У нас уютно,<br><span>вкусно и тепло</span></h1>
-                <p>Сочные бургеры и фирменные хот-доги в Караганде. Заказывайте с доставкой прямо сейчас!</p>
+                <h1>У нас уютно,<br><span>вкусно и тепло</span> 🔥</h1>
+                <p>Фирменный стритфуд в Караганде. Авторские рецепты, сочные котлеты из отборного мяса, свежие булочки и лучшие ингредиенты.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h4>⚡ Быстро</h4>
+                    <p>Готовим с любовью и отдаем заказ в кратчайшие сроки.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🥩 100% Мясо</h4>
+                    <p>Только свежие говяжьи котлеты и сосиски премиум класса.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🥤 Напитки</h4>
+                    <p>Фирменные милкшейки, освежающие морсы и согревающие чаи.</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🛵 Доставка</h4>
+                    <p>Быстрая доставка по всему городу или самовывоз.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- БУРГЕРЫ -->
     <div class="container" id="burgers">
-        <h2 class="section-title">Бургеры</h2>
+        <h2 class="section-title">Фирменные <span>Бургеры</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
                 <div class="menu-info">
@@ -408,8 +545,8 @@ footer {
     </div>
 
     <!-- ХОТ-ДОГИ -->
-    <div class="container" id="hotdogs" style="margin-top: 40px;">
-        <h2 class="section-title">Хот-доги</h2>
+    <div class="container" id="hotdogs" style="margin-top: 50px;">
+        <h2 class="section-title">Сочные <span>Хот-доги</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
                 <div class="menu-info">
@@ -457,12 +594,12 @@ footer {
     </div>
 
     <!-- КОМБО -->
-    <div class="container" id="combo" style="margin-top: 40px;">
-        <h2 class="section-title">Комбо наборы</h2>
+    <div class="container" id="combo" style="margin-top: 50px;">
+        <h2 class="section-title">Выгодные <span>Комбо наборы</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
                 <div class="menu-info">
-                    <h3>Бургер + Хот-Дог + Напиток</h3>
+                    <h3>Макси Комбо</h3>
                     <p>Бургер на выбор + Хот-Дог на выбор + Морс / Чай / Газировка</p>
                 </div>
                 <div class="menu-bottom"><span class="price">3900 ₸</span><button class="add-btn" onclick="addToCart('Комбо: Бургер+Хот-Дог+Напиток', 3900)">В корзину</button></div>
@@ -485,19 +622,19 @@ footer {
     </div>
 
     <!-- СНЭКИ И НАПИТКИ -->
-    <div class="container" id="snackset" style="margin-top: 40px;">
-        <h2 class="section-title">Снэки и напитки</h2>
+    <div class="container" id="snackset" style="margin-top: 50px;">
+        <h2 class="section-title">Снэки и <span>Напитки</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
-                <div class="menu-info"><h3>Наггетсы (6 шт)</h3><p>Хрустящие куриные наггетсы</p></div>
+                <div class="menu-info"><h3>Наггетсы (6 шт)</h3><p>Хрустящие куриные наггетсы в панировке</p></div>
                 <div class="menu-bottom"><span class="price">1100 ₸</span><button class="add-btn" onclick="addToCart('Наггетсы 6 шт', 1100)">В корзину</button></div>
             </div>
             <div class="menu-card">
-                <div class="menu-info"><h3>Картофель фри</h3><p>Золотистые картофельные палочки</p></div>
+                <div class="menu-info"><h3>Картофель фри</h3><p>Золотистые картофельные палочки с солью</p></div>
                 <div class="menu-bottom"><span class="price">900 ₸</span><button class="add-btn" onclick="addToCart('Картофель фри', 900)">В корзину</button></div>
             </div>
             <div class="menu-card">
-                <div class="menu-info"><h3>Картофельные дольки</h3><p>Ароматные дольки картофеля</p></div>
+                <div class="menu-info"><h3>Картофельные дольки</h3><p>Ароматные пряные дольки картофеля</p></div>
                 <div class="menu-bottom"><span class="price">900 ₸</span><button class="add-btn" onclick="addToCart('Картофельные дольки', 900)">В корзину</button></div>
             </div>
             <div class="menu-card">
@@ -505,7 +642,7 @@ footer {
                 <div class="menu-bottom"><span class="price">1100 ₸</span><button class="add-btn" onclick="addToCart('Милкшейк', 1100)">В корзину</button></div>
             </div>
             <div class="menu-card">
-                <div class="menu-info"><h3>Морс (350 мл)</h3><p>Ягодный фирменный морс</p></div>
+                <div class="menu-info"><h3>Морс (350 мл)</h3><p>Фирменный освежающий ягодный морс</p></div>
                 <div class="menu-bottom"><span class="price">600 ₸</span><button class="add-btn" onclick="addToCart('Морс 350мл', 600)">В корзину</button></div>
             </div>
             <div class="menu-card">
@@ -514,11 +651,29 @@ footer {
             </div>
         </div>
     </div>
+
+    <!-- ДОПОЛНИТЕЛЬНАЯ ИНФОРМАЦИЯ О НАС -->
+    <div class="container" id="about">
+        <div class="about-section">
+            <div class="about-item">
+                <h3>11:00 — 23:00</h3>
+                <p>Ежедневно без выходных и перерывов работаем для вас</p>
+            </div>
+            <div class="about-item">
+                <h3>ул. Мустафина 24/1</h3>
+                <p>Ждем вас в гости в нашем уютном заведении в Караганде</p>
+            </div>
+            <div class="about-item">
+                <h3>+7 (775) 938-78-98</h3>
+                <p>Рабочий номер для быстрых заказов и связи в WhatsApp</p>
+            </div>
+        </div>
+    </div>
 </main>
 
 <footer>
-    <div class="container" style="margin-top: 50px;">
-        CHAPTER STREET FOOD • Караганда, ул. Мустафина 24/1 • 2026
+    <div class="container" style="margin-top: 30px;">
+        CHAPTER STREET FOOD • Караганда, ул. Мустафина 24/1 • Все права защищены © 2026
     </div>
 </footer>
 
@@ -526,22 +681,22 @@ footer {
 <div class="modal" id="cartModal">
     <div class="modal-box">
         <button class="close" id="closeCart">×</button>
-        <h3>Ваш заказ</h3>
+        <h3>Оформление заказа</h3>
         
         <div class="cart-items" id="cartItems">
             <p style="color: #666; font-size: 14px;">Корзина пуста</p>
         </div>
         
-        <div style="font-weight: bold; margin-bottom: 10px;" id="cartTotal">Итого: 0 ₸</div>
+        <div style="font-weight: 900; font-size: 18px; margin-bottom: 15px; color: #ffb143;" id="cartTotal">Итого: 0 ₸</div>
 
         <div class="kaspi-box">
             💳 <strong>Оплата по номеру Kaspi Gold:</strong><br>
-            Переведите сумму на рабочий номер: <strong>+7 (775) 938-78-98</strong><br>
-            После перевода нажмите кнопку отправки в WhatsApp и прикрепите скриншот чека.
+            Переведите точную сумму на рабочий номер: <strong>+7 (775) 938-78-98</strong><br>
+            После оплаты нажмите кнопку отправки в WhatsApp и прикрепите скриншот чека.
         </div>
 
         <label>Ваше имя</label>
-        <input id="clientName" placeholder="Имя" />
+        <input id="clientName" placeholder="Введите ваше имя" />
 
         <label>Телефон / WhatsApp</label>
         <input id="clientPhone" placeholder="+7 700 000 00 00" />
@@ -549,7 +704,7 @@ footer {
         <label>Адрес доставки в Караганде</label>
         <input id="clientAddress" placeholder="Улица, дом, квартира" />
 
-        <button class="cart-btn" style="width:100%; margin-top:15px;" onclick="sendOrder()">Оплатил(а) • Отправить заказ в WhatsApp</button>
+        <button class="cart-btn" style="width:100%; margin-top:20px; padding: 14px;" onclick="sendOrder()">Оплатил(а) • Отправить в WhatsApp</button>
     </div>
 </div>
 
@@ -614,7 +769,7 @@ function sendOrder() {
     cart.forEach(i => {
         text += `- ${i.name} x${i.qty} (${i.price * i.qty} ₸)\n`;
     });
-    text += `\n💰 Итого к оплате: ${total} ₸\n💳 Оплата через Kaspi выполнена\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n📍 Адрес: ${address}\n\n*(Прикрепите скриншот чека из Kaspi)*`;
+    text += `\n💰 Итого к оплате: ${total} ₸\n💳 Оплата через Kaspi выполнена\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n📍 Адрес: ${address}\n\n*(Обязательно прикрепите скриншот чека из Kaspi)*`;
 
     let myPhone = "77759387898";
     window.open(`https://wa.me/${myPhone}?text=${encodeURIComponent(text)}`, "_blank");
