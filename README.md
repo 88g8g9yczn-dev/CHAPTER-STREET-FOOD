@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CHAPTER STREET FOOD — Сочные бургеры и хот-доги в Караганде</title>
+<title>CHAPTER STREET FOOD — Меню Караганда</title>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -33,7 +33,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Живой аппетитный фон с теплыми лучами */
 body::before {
     content: "";
     position: fixed;
@@ -51,7 +50,6 @@ body::before {
     margin: auto;
 }
 
-/* HEADER */
 header {
     position: fixed;
     width: 100%;
@@ -70,7 +68,7 @@ header {
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 900;
     letter-spacing: -0.5px;
     text-transform: uppercase;
@@ -87,9 +85,9 @@ header {
 
 .nav-links {
     display: flex;
-    gap: 30px;
+    gap: 20px;
     color: #d1d5db;
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 600;
 }
 
@@ -101,14 +99,13 @@ header {
 
 .nav-links a:hover {
     color: var(--accent);
-    text-shadow: 0 0 12px var(--primary-glow);
 }
 
 .cart-btn {
     background: linear-gradient(135deg, #ff471a, #ff6b3d);
     color: white;
-    padding: 12px 24px;
-    border-radius: 16px;
+    padding: 10px 20px;
+    border-radius: 14px;
     font-weight: 800;
     border: none;
     cursor: pointer;
@@ -118,16 +115,13 @@ header {
 
 .cart-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 25px rgba(255, 71, 26, 0.6);
 }
 
-/* HERO SECTION С БОЛЬШИМ АППЕТИТНЫМ БИЛДЕРОВ */
 .hero {
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     align-items: center;
     padding-top: 110px;
-    position: relative;
 }
 
 .hero-grid {
@@ -161,7 +155,7 @@ header {
 }
 
 .hero h1 {
-    font-size: clamp(36px, 4.5vw, 56px);
+    font-size: clamp(34px, 4.5vw, 52px);
     line-height: 1.1;
     font-weight: 900;
     letter-spacing: -1px;
@@ -176,68 +170,28 @@ header {
 .hero p {
     margin-top: 20px;
     color: #9ca3af;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.6;
 }
 
-/* СЕТКА ИГРЕДИЕНТОВ И СТРИТФУДА С АППЕТИТНЫМИ ФОТО-ИЛЛЮСТРАЦИЯМИ */
-.food-showcase {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.food-card-preview {
-    background: var(--card-bg);
-    border: 1px solid var(--border);
-    border-radius: 24px;
-    overflow: hidden;
-    backdrop-filter: blur(12px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
-    position: relative;
-}
-
-.food-card-preview:hover {
-    transform: translateY(-8px) scale(1.02);
-    border-color: rgba(255, 71, 26, 0.6);
-    box-shadow: 0 20px 40px rgba(255, 71, 26, 0.25);
-}
-
-.food-card-img {
-    height: 130px;
+.hero-banner-img {
     width: 100%;
+    height: 380px;
     object-fit: cover;
-    border-bottom: 1px solid var(--border);
+    border-radius: 28px;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
 }
 
-.food-card-body {
-    padding: 16px;
-}
-
-.food-card-body h4 {
-    color: var(--accent);
-    font-size: 15px;
-    font-weight: 800;
-    margin-bottom: 4px;
-}
-
-.food-card-body p {
-    color: #9ca3af;
-    font-size: 11px;
-    line-height: 1.4;
-}
-
-/* MENU SECTION */
 section {
-    padding: 70px 0;
+    padding: 60px 0;
 }
 
 .section-title {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 900;
     letter-spacing: -1px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     color: #fff;
     display: flex;
     align-items: center;
@@ -260,13 +214,13 @@ section {
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 25px;
 }
 
 .menu-card {
     background: var(--card-bg);
     border: 1px solid var(--border);
-    border-radius: 26px;
+    border-radius: 24px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -277,16 +231,17 @@ section {
 }
 
 .menu-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
     border-color: rgba(255, 71, 26, 0.7);
-    box-shadow: 0 20px 45px rgba(255, 71, 26, 0.3);
+    box-shadow: 0 20px 45px rgba(255, 71, 26, 0.25);
 }
 
 .menu-img-wrap {
     width: 100%;
-    height: 190px;
+    height: 180px;
     overflow: hidden;
     position: relative;
+    background: #000;
 }
 
 .menu-img-wrap img {
@@ -297,11 +252,11 @@ section {
 }
 
 .menu-card:hover .menu-img-wrap img {
-    transform: scale(1.08);
+    transform: scale(1.06);
 }
 
 .menu-content-box {
-    padding: 24px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -309,17 +264,17 @@ section {
 }
 
 .menu-info h3 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 800;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     color: #fff;
 }
 
 .menu-info p {
     color: #9ca3af;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .menu-bottom {
@@ -327,11 +282,11 @@ section {
     align-items: center;
     justify-content: space-between;
     border-top: 1px solid rgba(255,255,255,0.06);
-    padding-top: 15px;
+    padding-top: 12px;
 }
 
 .price {
-    font-size: 21px;
+    font-size: 19px;
     font-weight: 900;
     color: var(--accent);
 }
@@ -340,10 +295,10 @@ section {
     background: rgba(255, 71, 26, 0.15);
     color: #ff6b3d;
     border: 1px solid rgba(255, 71, 26, 0.4);
-    padding: 10px 18px;
-    border-radius: 14px;
+    padding: 8px 14px;
+    border-radius: 12px;
     font-weight: 800;
-    font-size: 13px;
+    font-size: 12px;
     cursor: pointer;
     transition: all 0.2s;
 }
@@ -354,34 +309,32 @@ section {
     box-shadow: 0 4px 15px var(--primary-glow);
 }
 
-/* О НАС / ИНФО БЛОК */
 .about-section {
     background: var(--card-bg);
     border: 1px solid var(--border);
-    border-radius: 30px;
-    padding: 45px;
-    margin-top: 50px;
+    border-radius: 28px;
+    padding: 40px;
+    margin-top: 40px;
     backdrop-filter: blur(15px);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: 25px;
     text-align: center;
 }
 
 .about-item h3 {
     color: var(--primary);
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 900;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 }
 
 .about-item p {
     color: #9ca3af;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.4;
 }
 
-/* MODAL */
 .modal {
     position: fixed;
     inset: 0;
@@ -400,11 +353,11 @@ section {
 
 .modal-box {
     width: 100%;
-    max-width: 500px;
+    max-width: 480px;
     background: #14161c;
     border: 1px solid rgba(255, 177, 67, 0.4);
-    border-radius: 28px;
-    padding: 30px;
+    border-radius: 24px;
+    padding: 25px;
     max-height: 90vh;
     overflow-y: auto;
     box-shadow: 0 25px 50px rgba(0,0,0,0.7);
@@ -415,9 +368,8 @@ section {
     background: none;
     border: none;
     color: #888;
-    font-size: 28px;
+    font-size: 26px;
     cursor: pointer;
-    transition: color 0.2s;
 }
 
 .close:hover {
@@ -425,14 +377,14 @@ section {
 }
 
 .modal-box h3 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 900;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #fff;
 }
 
 .cart-items {
-    max-height: 180px;
+    max-height: 160px;
     overflow-y: auto;
     margin-bottom: 15px;
     border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -442,8 +394,8 @@ section {
 .cart-item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
-    font-size: 14px;
+    margin-bottom: 8px;
+    font-size: 13px;
     color: #d1d5db;
     font-weight: 600;
 }
@@ -451,10 +403,10 @@ section {
 .kaspi-box {
     background: rgba(0, 133, 255, 0.12);
     border: 1px solid rgba(0, 133, 255, 0.35);
-    border-radius: 16px;
-    padding: 15px;
-    margin: 15px 0;
-    font-size: 13px;
+    border-radius: 14px;
+    padding: 14px;
+    margin: 14px 0;
+    font-size: 12px;
     color: #ddd;
     line-height: 1.5;
 }
@@ -466,38 +418,34 @@ section {
 label {
     display: block;
     color: #9ca3af;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 600;
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
 }
 
 input {
     width: 100%;
-    padding: 12px 16px;
+    padding: 10px 14px;
     background: #090a0f;
     border: 1px solid rgba(255,255,255,0.12);
     color: white;
-    border-radius: 14px;
+    border-radius: 12px;
     outline: none;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    transition: border-color 0.2s;
+    font-size: 13px;
 }
 
 input:focus {
     border-color: var(--primary);
-    box-shadow: 0 0 10px var(--primary-glow);
 }
 
-/* FOOTER */
 footer {
-    padding: 40px 0;
+    padding: 30px 0;
     border-top: 1px solid rgba(255,255,255,0.08);
     color: #6b7280;
-    font-size: 13px;
+    font-size: 12px;
     text-align: center;
     background: rgba(15, 16, 21, 0.9);
 }
@@ -506,7 +454,6 @@ footer {
     .hero-grid { grid-template-columns: 1fr; }
     .menu-grid { grid-template-columns: 1fr; }
     .about-section { grid-template-columns: 1fr; }
-    .food-showcase { grid-template-columns: 1fr; }
     .nav-links { display: none; }
 }
 </style>
@@ -519,8 +466,9 @@ footer {
         <nav class="nav-links">
             <a href="#burgers">Бургеры</a>
             <a href="#hotdogs">Хот-доги</a>
-            <a href="#combo">Комбо</a>
-            <a href="#snackset">Снэки и напитки</a>
+            <a href="#snacks">Закуски</a>
+            <a href="#shakes">Милкшейки</a>
+            <a href="#drinks">Напитки</a>
             <a href="#about">О нас</a>
         </nav>
         <button class="cart-btn" id="openCart">🛒 Корзина (<span id="cartCount">0</span>)</button>
@@ -528,45 +476,16 @@ footer {
 </header>
 
 <main>
-    <!-- HERO С АППЕТИТНЫМИ ПРЕВЬЮ ПРЕДМЕТОВ -->
     <section class="hero">
         <div class="container hero-grid">
             <div class="hero-content">
                 <div class="badge">🔥 ул. Мустафина 24/1 • 11:00 - 23:00</div>
-                <h1>Сочится соком,<br><span>манит ароматом</span> 🍔</h1>
-                <p>Фирменный стритфуд в Караганде. Авторские рецепты, сочные котлеты из отборного мяса на гриле, тягучий сыр и хрустящая корочка.</p>
+                <h1>Сочное мясо,<br><span>фирменный стритфуд</span> 🍔</h1>
+                <p>Лучшие бургеры, хот-доги, хрустящие закуски и густые милкшейки в Караганде. Свежие ингредиенты и авторские соусы.</p>
             </div>
-            
-            <!-- АППЕТИТНЫЕ ВИЗУАЛЬНЫЕ ПРЕДМЕТЫ -->
-            <div class="food-showcase">
-                <div class="food-card-preview">
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=500&q=80" alt="Бургер" class="food-card-img">
-                    <div class="food-card-body">
-                        <h4>Крафтовая булка</h4>
-                        <p>С пылу с жару, подрумяненная на масле.</p>
-                    </div>
-                </div>
-                <div class="food-card-preview">
-                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=500&q=80" alt="Мясо гриль" class="food-card-img">
-                    <div class="food-card-body">
-                        <h4>Мраморный гриль</h4>
-                        <p>Сочная говядина с дымком и специями.</p>
-                    </div>
-                </div>
-                <div class="food-card-preview">
-                    <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=500&q=80" alt="Фри" class="food-card-img">
-                    <div class="food-card-body">
-                        <h4>Хрустящий фри</h4>
-                        <p>Золотистые картофельные ломтики.</p>
-                    </div>
-                </div>
-                <div class="food-card-preview">
-                    <img src="https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=500&q=80" alt="Милкшейк" class="food-card-img">
-                    <div class="food-card-body">
-                        <h4>Ледяные шейки</h4>
-                        <p>Густые милкшейки со взбитыми сливками.</p>
-                    </div>
-                </div>
+            <div>
+                <!-- Главная фирменная фотография бургера -->
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=800&q=80" alt="Бургер Chapter" class="hero-banner-img">
             </div>
         </div>
     </section>
@@ -576,316 +495,275 @@ footer {
         <h2 class="section-title">Фирменные <span>Бургеры</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Вилладжио">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Вилладжио"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Вилладжио 🧀</h3>
-                        <p>Говяжья котлета, соус Альфредо, картофельные рёсти, сыр моцарелла, красный лук, помидор</p>
+                        <h3>Бургер "Вилладжио" 🧀</h3>
+                        <p>Говяжья котлета, соус Альфредо, картофельные рёсти, сыр моцарелла, красный лук, помидор.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">2500 ₸</span><button class="add-btn" onclick="addToCart('Бургер Вилладжио', 2500)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">2300 ₸</span><button class="add-btn" onclick="addToCart('Бургер Вилладжио', 2300)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1625813506062-0aeb1d7a094b?auto=format&fit=crop&w=600&q=80" alt="Франческо">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Франческо"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Франческо 🧀</h3>
-                        <p>Отбивная из куриного филе, соус Руй, ананас, сыр, красный лук, помидор</p>
+                        <h3>Бургер "Франческо" 🧀</h3>
+                        <p>Отбивная из куриного филе, соус Руй, ананас, сыр, красный лук, помидор.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">2500 ₸</span><button class="add-btn" onclick="addToCart('Бургер Франческо', 2500)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">2300 ₸</span><button class="add-btn" onclick="addToCart('Бургер Франческо', 2300)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?auto=format&fit=crop&w=600&q=80" alt="Машрум">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Машрум"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Машрум 🍄</h3>
-                        <p>Говяжья котлета, сливочно-грибной соус, шампиньоны, красный лук, помидор</p>
+                        <h3>Бургер "Машрум" 🍄</h3>
+                        <p>Говяжья котлета, сливочно-грибной соус, шампиньоны, красный лук, помидор.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">2500 ₸</span><button class="add-btn" onclick="addToCart('Бургер Машрум', 2500)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">2300 ₸</span><button class="add-btn" onclick="addToCart('Бургер Машрум', 2300)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80" alt="Тарантино">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Тарантино"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Тарантино 🌶️</h3>
-                        <p>Говяжья котлета, соус Тар-Тар, копченые колбаски, халапеньо, красный лук, помидор</p>
+                        <h3>Бургер "Тарантино" 🌶️</h3>
+                        <p>Говяжья котлета, соус Тар-Тар, копченые колбаски, халапеньо, красный лук, помидор.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">2500 ₸</span><button class="add-btn" onclick="addToCart('Бургер Тарантино', 2500)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">2300 ₸</span><button class="add-btn" onclick="addToCart('Бургер Тарантино', 2300)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80" alt="Итальяно">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Итальяно"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Итальяно 🧀</h3>
-                        <p>Говяжья котлета, томленые томаты, сыр моцарелла, сладко-пряный соус, красный лук</p>
+                        <h3>Бургер "Итальяно" 🧀</h3>
+                        <p>Говяжья котлета, томленые томаты, сыр моцарелла, сладко-пряный соус, красный лук.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">2500 ₸</span><button class="add-btn" onclick="addToCart('Бургер Итальяно', 2500)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">2300 ₸</span><button class="add-btn" onclick="addToCart('Бургер Итальяно', 2300)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1582196016297-f5c9bb0d473a?auto=format&fit=crop&w=600&q=80" alt="Чизи-Чиз">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Чизи-Чиз"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Чизи-Чиз 🧀</h3>
-                        <p>Говяжья котлета, сливочный соус Альфредо, сыр Чеддер, сыр моцарелла, сыр, красный лук, помидор</p>
+                        <h3>Бургер "Чизи-Чиз" 🧀</h3>
+                        <p>Говяжья котлета, сливочный соус Альфредо, сыр Чеддер, сыр моцарелла, красный лук, помидор.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">2500 ₸</span><button class="add-btn" onclick="addToCart('Бургер Чизи-Чиз', 2500)">В корзину</button></div>
-                </div>
-            </div>
-            <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1572802419224-296b0aeee0d9?auto=format&fit=crop&w=600&q=80" alt="Классик">
-                </div>
-                <div class="menu-content-box">
-                    <div class="menu-info">
-                        <h3>Классик 🧀</h3>
-                        <p>Говяжья котлета, соус Руй, обжаренная курица, сыр, маринованные огурцы, красный лук, помидор</p>
-                    </div>
-                    <div class="menu-bottom"><span class="price">2500 ₸</span><button class="add-btn" onclick="addToCart('Бургер Классик', 2500)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">2300 ₸</span><button class="add-btn" onclick="addToCart('Бургер Чизи-Чиз', 2300)">В корзину</button></div>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- ХОТ-ДОГИ -->
-    <div class="container" id="hotdogs" style="margin-top: 50px;">
+    <div class="container" id="hotdogs" style="margin-top: 40px;">
         <h2 class="section-title">Сочные <span>Хот-доги</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=600&q=80" alt="Нью-Йорк">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="New York"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Нью-Йорк</h3>
-                        <p>Говяжья сосиска, обжаренная курица, маринованные огурцы, кетчуп, сладкий горчичный соус, чипсы</p>
+                        <h3>Хот-дог "New York"</h3>
+                        <p>Говяжья сосиска, обжаренная курица, маринованные огурцы, кетчуп, горчичный соус, хрустящие чипсы.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">1500 ₸</span><button class="add-btn" onclick="addToCart('Хот-дог Нью-Йорк', 1500)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">1400 ₸</span><button class="add-btn" onclick="addToCart('Хот дог New York', 1400)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=600&q=80" alt="Тито">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Лучано"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Тито</h3>
-                        <p>Говяжья сосиска, чесночный соус, красный лук, помидор, болгарский перец, чипсы</p>
+                        <h3>Хот-дог "Лучано"</h3>
+                        <p>Говяжья сосиска, карамелизированный лук, соус барбекю, сладкий горчичный соус, чипсы.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">1500 ₸</span><button class="add-btn" onclick="addToCart('Хот-дог Тито', 1500)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">1400 ₸</span><button class="add-btn" onclick="addToCart('Хот дог Лучано', 1400)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1541214113247-2195a6ad17d4?auto=format&fit=crop&w=600&q=80" alt="Лучано">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Чизус"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Лучано</h3>
-                        <p>Говяжья сосиска, карамелизированный лук, соус барбекю, сладкий горчичный соус, чипсы</p>
+                        <h3>Хот-дог "Чизус" 🧀</h3>
+                        <p>Говяжья сосиска, нежный омлет, сыр, фирменный сырный соус, хрустящие чипсы.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">1500 ₸</span><button class="add-btn" onclick="addToCart('Хот-дог Лучано', 1500)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">1400 ₸</span><button class="add-btn" onclick="addToCart('Хот дог Чизус', 1400)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?auto=format&fit=crop&w=600&q=80" alt="Чизус">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Грибной"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Чизус 🧀</h3>
-                        <p>Говяжья сосиска, омлет, сыр, сырный соус, чипсы</p>
+                        <h3>Хот-дог "Грибной" 🍄</h3>
+                        <p>Говяжья сосиска, сливочно-грибной соус, сырный соус, шампиньоны, чипсы.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">1500 ₸</span><button class="add-btn" onclick="addToCart('Хот-дог Чизус', 1500)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">1400 ₸</span><button class="add-btn" onclick="addToCart('Хот дог Грибной', 1400)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1619740455993-9e612b1af08a?auto=format&fit=crop&w=600&q=80" alt="Мачете">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Тито"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Мачете 🌶️</h3>
-                        <p>Говяжья сосиска, соус Тар-Тар, халапеньо, горчичный соус, чипсы</p>
+                        <h3>Хот-дог "Тито" 🔥</h3>
+                        <p>Фирменная сосиска, специальный авторский соус, хрустящий лук фри в золотистой булочке.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">1500 ₸</span><button class="add-btn" onclick="addToCart('Хот-дог Мачете', 1500)">В корзину</button></div>
-                </div>
-            </div>
-            <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1541214113247-2195a6ad17d4?auto=format&fit=crop&w=600&q=80" alt="Грибной">
-                </div>
-                <div class="menu-content-box">
-                    <div class="menu-info">
-                        <h3>Грибной 🍄</h3>
-                        <p>Говяжья сосиска, сливочно-грибной соус, сырный соус, шампиньоны, чипсы</p>
-                    </div>
-                    <div class="menu-bottom"><span class="price">1500 ₸</span><button class="add-btn" onclick="addToCart('Хот-дог Грибной', 1500)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">1400 ₸</span><button class="add-btn" onclick="addToCart('Хот дог Тито', 1400)">В корзину</button></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- КОМБО -->
-    <div class="container" id="combo" style="margin-top: 50px;">
-        <h2 class="section-title">Выгодные <span>Комбо наборы</span></h2>
+    <!-- ЗАКУСКИ -->
+    <div class="container" id="snacks" style="margin-top: 40px;">
+        <h2 class="section-title">Хрустящие <span>Закуски</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?auto=format&fit=crop&w=600&q=80" alt="Макси Комбо">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Картофель Фри"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Макси Комбо</h3>
-                        <p>Бургер на выбор + Хот-Дог на выбор + Морс / Чай / Газировка</p>
+                        <h3>Картофель Фри 🍟</h3>
+                        <p>Золотистые картофельные ломтики с хрустящей корочкой и солидным вкусом.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">3900 ₸</span><button class="add-btn" onclick="addToCart('Комбо: Бургер+Хот-Дог+Напиток', 3900)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">700 ₸</span><button class="add-btn" onclick="addToCart('Картофель Фри', 700)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=600&q=80" alt="Комбо Бургер">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Наггетсы"></div>
                 <div class="menu-content-box">
                     <div class="menu-info">
-                        <h3>Комбо Бургер</h3>
-                        <p>Бургер на выбор + Фри (+соус) + Морс / Чай / Газировка</p>
+                        <h3>Куриные Наггетсы 🍗</h3>
+                        <p>Сочное куриное филе в хрустящей панировке, обжаренное до золотистого цвета.</p>
                     </div>
-                    <div class="menu-bottom"><span class="price">3400 ₸</span><button class="add-btn" onclick="addToCart('Комбо Бургер', 3400)">В корзину</button></div>
-                </div>
-            </div>
-            <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Комбо Хот-Дог">
-                </div>
-                <div class="menu-content-box">
-                    <div class="menu-info">
-                        <h3>Комбо Хот-Дог</h3>
-                        <p>Хот-Дог на выбор + Фри (+соус) + Морс / Чай / Газировка</p>
-                    </div>
-                    <div class="menu-bottom"><span class="price">2600 ₸</span><button class="add-btn" onclick="addToCart('Комбо Хот-Дог', 2600)">В корзину</button></div>
+                    <div class="menu-bottom"><span class="price">900 ₸</span><button class="add-btn" onclick="addToCart('Наггетсы', 900)">В корзину</button></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- СНЭКИ И НАПИТКИ -->
-    <div class="container" id="snackset" style="margin-top: 50px;">
-        <h2 class="section-title">Снэки и <span>Напитки</span></h2>
+    <!-- МИЛКШЕЙКИ -->
+    <div class="container" id="shakes" style="margin-top: 40px;">
+        <h2 class="section-title">Густые <span>Милкшейки</span></h2>
         <div class="menu-grid">
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=600&q=80" alt="Наггетсы">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Ваниль"></div>
                 <div class="menu-content-box">
-                    <div class="menu-info"><h3>Наггетсы (6 шт)</h3><p>Хрустящие куриные наггетсы в панировке</p></div>
-                    <div class="menu-bottom"><span class="price">1100 ₸</span><button class="add-btn" onclick="addToCart('Наггетсы 6 шт', 1100)">В корзину</button></div>
+                    <div class="menu-info">
+                        <h3>Милкшейк "Ваниль" 🍦</h3>
+                        <p>Классический густой молочный коктейль с ванильным вкусом и шапкой из взбитых сливок.</p>
+                    </div>
+                    <div class="menu-bottom"><span class="price">900 ₸</span><button class="add-btn" onclick="addToCart('Милкшейк Ваниль', 900)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=600&q=80" alt="Картофель фри">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Клубничный"></div>
                 <div class="menu-content-box">
-                    <div class="menu-info"><h3>Картофель фри</h3><p>Золотистые картофельные палочки с солью</p></div>
-                    <div class="menu-bottom"><span class="price">900 ₸</span><button class="add-btn" onclick="addToCart('Картофель фри', 900)">В корзину</button></div>
+                    <div class="menu-info">
+                        <h3>Милкшейк "Клубничный" 🍓</h3>
+                        <p>Нежный молочный коктейль с ароматным клубничным сиропом и взбитыми сливками.</p>
+                    </div>
+                    <div class="menu-bottom"><span class="price">900 ₸</span><button class="add-btn" onclick="addToCart('Милкшейк Клубничный', 900)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1630384060421-cb20d0e0649d?auto=format&fit=crop&w=600&q=80" alt="Дольки">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Сникерс"></div>
                 <div class="menu-content-box">
-                    <div class="menu-info"><h3>Картофельные дольки</h3><p>Ароматные пряные дольки картофеля</p></div>
-                    <div class="menu-bottom"><span class="price">900 ₸</span><button class="add-btn" onclick="addToCart('Картофельные дольки', 900)">В корзину</button></div>
+                    <div class="menu-info">
+                        <h3>Милкшейк "Сникерс" 🍫</h3>
+                        <p>Насыщенный шоколадно-ореховый коктейль со взбитыми сливками и карамельным топпингом.</p>
+                    </div>
+                    <div class="menu-bottom"><span class="price">900 ₸</span><button class="add-btn" onclick="addToCart('Милкшейк Сникерс', 900)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1541658016709-82535e94bc69?auto=format&fit=crop&w=600&q=80" alt="Милкшейк">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Шоколад"></div>
                 <div class="menu-content-box">
-                    <div class="menu-info"><h3>Милкшейк (350 мл)</h3><p>Клубничный / Ванильный / Snickers / Банановый / Шоколадный / Oreo</p></div>
-                    <div class="menu-bottom"><span class="price">1100 ₸</span><button class="add-btn" onclick="addToCart('Милкшейк', 1100)">В корзину</button></div>
+                    <div class="menu-info">
+                        <h3>Милкшейк "Шоколад" 🍫</h3>
+                        <p>Глубокий шоколадный вкус, густая текстура и пышная шапка из взбитых сливок.</p>
+                    </div>
+                    <div class="menu-bottom"><span class="price">900 ₸</span><button class="add-btn" onclick="addToCart('Милкшейк Шоколад', 900)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Морс">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Oreo"></div>
                 <div class="menu-content-box">
-                    <div class="menu-info"><h3>Морс (350 мл)</h3><p>Фирменный освежающий ягодный морс</p></div>
-                    <div class="menu-bottom"><span class="price">600 ₸</span><button class="add-btn" onclick="addToCart('Морс 350мл', 600)">В корзину</button></div>
+                    <div class="menu-info">
+                        <h3>Милкшейк "Oreo" 🍪</h3>
+                        <p>Культовый коктейль с дробленым печеньем Oreo, сливками и шоколадной крошкой.</p>
+                    </div>
+                    <div class="menu-bottom"><span class="price">900 ₸</span><button class="add-btn" onclick="addToCart('Милкшейк Oreo', 900)">В корзину</button></div>
                 </div>
             </div>
             <div class="menu-card">
-                <div class="menu-img-wrap">
-                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Чай">
-                </div>
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Банановый"></div>
                 <div class="menu-content-box">
-                    <div class="menu-info"><h3>Чай (350 мл)</h3><p>Фруктовый / Ташкентский / Ягодный / Облепиховый</p></div>
-                    <div class="menu-bottom"><span class="price">600 ₸</span><button class="add-btn" onclick="addToCart('Чай 350мл', 600)">В корзину</button></div>
+                    <div class="menu-info">
+                        <h3>Милкшейк "Банановый" 🍌</h3>
+                        <p>Сладкий сливочно-банановый милкшейк со взбитыми сливками.</p>
+                    </div>
+                    <div class="menu-bottom"><span class="price">900 ₸</span><button class="add-btn" onclick="addToCart('Милкшейк Банановый', 900)">В корзину</button></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- ИНФО О НАС -->
+    <!-- НАПИТКИ -->
+    <div class="container" id="drinks" style="margin-top: 40px;">
+        <h2 class="section-title">Освежающие <span>Напитки</span></h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="menu-img-wrap"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Морс"></div>
+                <div class="menu-content-box">
+                    <div class="menu-info">
+                        <h3>Фирменный Морс 🥤</h3>
+                        <p>Натуральный ягодный морс собственного приготовления в удобной бутылочке.</p>
+                    </div>
+                    <div class="menu-bottom"><span class="price">600 ₸</span><button class="add-btn" onclick="addToCart('Фирменный Морс', 600)">В корзину</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container" id="about">
         <div class="about-section">
             <div class="about-item">
                 <h3>11:00 — 23:00</h3>
-                <p>Ежедневно без выходных и перерывов работаем для вас</p>
+                <p>Работаем ежедневно без перерывов</p>
             </div>
             <div class="about-item">
                 <h3>ул. Мустафина 24/1</h3>
-                <p>Ждем вас в гости в нашем уютном заведении в Караганде</p>
+                <p>Ждем вас в Караганде</p>
             </div>
             <div class="about-item">
                 <h3>+7 (775) 938-78-98</h3>
-                <p>Рабочий номер для быстрых заказов и связи в WhatsApp</p>
+                <p>Номер для заказов и WhatsApp</p>
             </div>
         </div>
     </div>
 </main>
 
 <footer>
-    <div class="container" style="margin-top: 30px;">
+    <div class="container">
         CHAPTER STREET FOOD • Караганда, ул. Мустафина 24/1 • Все права защищены © 2026
     </div>
 </footer>
 
-<!-- MODAL -->
 <div class="modal" id="cartModal">
     <div class="modal-box">
         <button class="close" id="closeCart">×</button>
         <h3>Оформление заказа</h3>
         
         <div class="cart-items" id="cartItems">
-            <p style="color: #666; font-size: 14px;">Корзина пуста</p>
+            <p style="color: #666; font-size: 13px;">Корзина пуста</p>
         </div>
         
-        <div style="font-weight: 900; font-size: 18px; margin-bottom: 15px; color: var(--accent);" id="cartTotal">Итого: 0 ₸</div>
+        <div style="font-weight: 900; font-size: 17px; margin-bottom: 12px; color: var(--accent);" id="cartTotal">Итого: 0 ₸</div>
 
         <div class="kaspi-box">
             💳 <strong>Оплата по номеру Kaspi Gold:</strong><br>
-            Переведите точную сумму на рабочий номер: <strong>+7 (775) 938-78-98</strong><br>
-            После оплаты нажмите кнопку отправки в WhatsApp и прикрепите скриншот чека.
+            Переведите сумму на номер: <strong>+7 (775) 938-78-98</strong><br>
+            После оплаты прикрепите чек в WhatsApp.
         </div>
 
         <label>Ваше имя</label>
@@ -894,16 +772,15 @@ footer {
         <label>Телефон / WhatsApp</label>
         <input id="clientPhone" placeholder="+7 700 000 00 00" />
 
-        <label>Адрес доставки в Караганде</label>
+        <label>Адрес доставки</label>
         <input id="clientAddress" placeholder="Улица, дом, квартира" />
 
-        <button class="cart-btn" style="width:100%; margin-top:20px; padding: 14px;" onclick="sendOrder()">Оплатил(а) • Отправить в WhatsApp</button>
+        <button class="cart-btn" style="width:100%; margin-top:16px; padding: 12px;" onclick="sendOrder()">Оплатил(а) • Отправить в WhatsApp</button>
     </div>
 </div>
 
 <script>
 let cart = [];
-
 const modal = document.getElementById("cartModal");
 const openCartBtn = document.getElementById("openCart");
 const closeCartBtn = document.getElementById("closeCart");
@@ -926,13 +803,11 @@ function addToCart(name, price) {
 
 function updateCartUI() {
     cartCount.innerText = cart.reduce((sum, i) => sum + i.qty, 0);
-    
     if (cart.length === 0) {
-        cartItems.innerHTML = `<p style="color: #666; font-size: 14px;">Корзина пуста</p>`;
+        cartItems.innerHTML = `<p style="color: #666; font-size: 13px;">Корзина пуста</p>`;
         cartTotal.innerText = "Итого: 0 ₸";
         return;
     }
-
     let html = "";
     let total = 0;
     cart.forEach(i => {
@@ -962,7 +837,7 @@ function sendOrder() {
     cart.forEach(i => {
         text += `- ${i.name} x${i.qty} (${i.price * i.qty} ₸)\n`;
     });
-    text += `\n💰 Итого к оплате: ${total} ₸\n💳 Оплата через Kaspi выполнена\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n📍 Адрес: ${address}\n\n*(Обязательно прикрепите скриншот чека из Kaspi)*`;
+    text += `\n💰 Итого: ${total} ₸\n💳 Оплата через Kaspi выполнена\n\n👤 Имя: ${name}\n📞 Телефон: ${phone}\n📍 Адрес: ${address}\n\n*(Прикрепите скриншот чека)*`;
 
     let myPhone = "77759387898";
     window.open(`https://wa.me/${myPhone}?text=${encodeURIComponent(text)}`, "_blank");
